@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonar Rock or Mine Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sonar Rock or Mine Prediction</h1>
+        <p>Enter 60 sonar feature values to classify the object as Rock or Mine.</p>
+        
+        <!-- Input form for the features -->
+        <textarea id="inputData" placeholder="Enter 60 comma-separated values (e.g., 0.02, 0.03, ...)" rows="6" cols="50"></textarea><br>
+        
+        <button onclick="predict()">Predict</button>
+
+        <!-- Result output -->
+        <h2>Prediction: <span id="result">Waiting for input...</span></h2>
+
+        <!-- Display Confusion Matrix Visualization -->
+        <div id="confusionMatrixContainer">
+            <h3>Confusion Matrix (For Best Model)</h3>
+            <img id="confusionMatrixImg" src="#" alt="Confusion Matrix" style="display:none;">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
